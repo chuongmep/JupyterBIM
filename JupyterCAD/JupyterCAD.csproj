@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+      <Reference Include="accoremgd">
+        <HintPath>Lib\accoremgd.dll</HintPath>
+      </Reference>
+      <Reference Include="Acdbmgd">
+        <HintPath>Lib\acdbmgd.dll</HintPath>
+      </Reference>
+      <Reference Include="Acmgd">
+        <HintPath>Lib\acmgd.dll</HintPath>
+      </Reference>
+      <Reference Include="AdWindows">
+        <HintPath>Lib\AdWindows.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JupyterCAD", "JupyterCAD\JupyterCAD.csproj", "{09235F55-F957-42E2-B06E-3E6529E677DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JupyterRevit", "JupyterRevit\JupyterRevit.csproj", "{8D69AB33-23FC-4C23-9736-00495949E624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JupyterNavisworks", "JupyterNavisworks\JupyterNavisworks.csproj", "{D80A680F-A0A1-442F-8930-2B33E408CA43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09235F55-F957-42E2-B06E-3E6529E677DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09235F55-F957-42E2-B06E-3E6529E677DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09235F55-F957-42E2-B06E-3E6529E677DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09235F55-F957-42E2-B06E-3E6529E677DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D69AB33-23FC-4C23-9736-00495949E624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D69AB33-23FC-4C23-9736-00495949E624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D69AB33-23FC-4C23-9736-00495949E624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D69AB33-23FC-4C23-9736-00495949E624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D80A680F-A0A1-442F-8930-2B33E408CA43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80A680F-A0A1-442F-8930-2B33E408CA43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80A680F-A0A1-442F-8930-2B33E408CA43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80A680F-A0A1-442F-8930-2B33E408CA43}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
