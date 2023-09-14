@@ -1,6 +1,7 @@
 ﻿using System.CommandLine;
 using System.IO.Pipes;
 using System.Windows.Threading;
+using Autodesk.AutoCAD.ApplicationServices;
 using Autodesk.AutoCAD.Runtime;
 using FSharp.Compiler.Syntax;
 using Microsoft.DotNet.Interactive;
@@ -21,6 +22,9 @@ public class App : IExtensionApplication
     private bool RunOnDispatcher { get; set; }
     public void Initialize()
     {
+        
+        // write a message to the command line
+        Application.DocumentManager.MdiActiveDocument.Editor.WriteMessage("\nHello World!\n");
         _kernel = new CompositeKernel();
 
         SetUpNamedPipeKernelConnection();
@@ -32,7 +36,8 @@ public class App : IExtensionApplication
         var _ = Task.Run(async () =>
         {
             //Load WPF app assembly 
-            await csharpKernel.SendAsync(new SubmitCode(@$"#r ""{typeof(SynExpr.App).Assembly.Location}""
+            string ass = typeof(SynExpr.App).Assembly.Location;
+            await csharpKernel.SendAsync(new SubmitCode(@$"#r ""{ass}""
 using {nameof(WpfConnect)};"));
             //Add the WPF app as a variable that can be accessed
             await csharpKernel.SetValueAsync("App", this, GetType());
